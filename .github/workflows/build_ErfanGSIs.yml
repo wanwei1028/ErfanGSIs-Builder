@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://dl.revtechs.me/miui/MI8Lite/ROS-MIUI_MI8Lite_20.6.24_v12-10.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: RevOS
+  ROM_URL: https://oxygenos.oneplus.net/OnePlus7ProOxygen_21.P.27_OTA_027_all_2005192132_e3185c1907734508.zip
+  ROM_NAME: OxygenOS
+  ZIP_NAME: Curtana-OOS
   TZ: Asia/Kolkata
   MIR: bit
 jobs:
