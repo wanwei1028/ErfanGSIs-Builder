@@ -34,7 +34,7 @@ jobs:
 
        
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs
+         run: git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs -b curtana
        
        - name: Setting up ErfanGSI requirements
          run: |
