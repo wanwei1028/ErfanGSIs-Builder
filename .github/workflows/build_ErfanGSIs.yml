@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://dl.revtechs.me/miui/Mi9Lite/ROS-MIUI_Mi9Lite_20.6.24_v12-10.zip
+  ROM_URL: https://dl.revtechs.me/miui/MI8Lite/ROS-MIUI_MI8Lite_20.6.24_v12-10.zip
   ROM_NAME: MIUI
   ZIP_NAME: RevOS
   TZ: Asia/Kolkata
