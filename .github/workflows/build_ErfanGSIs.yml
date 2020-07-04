@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://oxygenos.oneplus.net/OnePlus7ProOxygen_21.P.27_OTA_027_all_2005192132_e3185c1907734508.zip
-  ROM_NAME: OxygenOS
-  ZIP_NAME: Curtana-OOS
+  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS620KL/UL-Z01R-WW-100.10.107.87-user.zip
+  ROM_NAME: ZenUI
+  ZIP_NAME: ZenUI
   TZ: Asia/Kolkata
   MIR: bit
 jobs:
