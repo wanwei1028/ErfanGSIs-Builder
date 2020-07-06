@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS620KL/UL-Z01R-WW-100.10.107.87-user.zip
-  ROM_NAME: ZenUI
-  ZIP_NAME: ZenUI
+  ROM_URL: http://tdrive.manofuranium.workers.dev/MandFX_LEGION_Edition_whyred_20.7.4_10_Final.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: Mandfx
   TZ: Asia/Kolkata
   MIR: bit
 jobs:
