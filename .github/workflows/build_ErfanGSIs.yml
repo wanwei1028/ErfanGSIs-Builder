@@ -18,7 +18,7 @@ env:
   ROM_NAME: MIUI
   ZIP_NAME: Mandfx
   TZ: Asia/Kolkata
-  MIR: cow
+  MIR: wet
 jobs:
   build:
     runs-on: ubuntu-latest
