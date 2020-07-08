@@ -1,17 +1,6 @@
 name: Building GSI..
 
-on:
-#  release:
-#    types: [published]
-#  push:
-#    branches:
-#      - master
-#    paths:
-#      - '.config'
-#  schedule:
-#    - cron: 0 8 * * 5
-  watch:
-    types: [started]
+on: [push]
     
 env:
   ROM_URL: https://hugeota.d.miui.com/20.6.28/miui_UMI_20.6.28_a5e0d69c19_11.0.zip
@@ -34,7 +23,7 @@ jobs:
 
        
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs -b curtana
+         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs -b curtana
        
        - name: Setting up ErfanGSI requirements
          run: |
@@ -45,7 +34,7 @@ jobs:
        - name: Download Stock Rom & Generate GSI
          run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
        
-       - name: Zip Aonly and upload 
+       - name: Zip A only and upload 
          run: |
               mkdir final
               sudo chmod -R 777 ErfanGSIs/output
