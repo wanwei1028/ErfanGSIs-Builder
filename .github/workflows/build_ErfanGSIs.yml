@@ -7,7 +7,7 @@ env:
   ROM_NAME: OxygenOS
   ZIP_NAME: OxygenOS_OP8P
   TZ: America/Sao_Paulo
-  MIR: mir
+  MIR: gof
 jobs:
   build:
     runs-on: ubuntu-latest
