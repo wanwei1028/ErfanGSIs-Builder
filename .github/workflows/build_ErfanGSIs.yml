@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
     
 env:
-  ROM_URL: https://dl.google.com/developers/android/rvc/images/gsi/gsi_gms_arm64-exp-RPB1.200504.020-6557529.zip
-  ROM_NAME: Generic
-  ZIP_NAME: Android11_B2
+  ROM_URL: http://bigota.d.miui.com/20.7.8/miui_RAPHAEL_20.7.8_0c77dddef8_10.0.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUI
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
@@ -17,13 +17,9 @@ jobs:
          uses: actions/checkout@master
            
        - name: Initializing environment
-         env:
-              chat_id1: ${{ secrets.CHAT_ID1 }}
-              bot_token: ${{ secrets.BOT_TOKEN }}
          run: |
             sudo -E apt-get -qq update
             sudo -E apt-get -qq install git openjdk-8-jdk wget
-            curl -F "parse_mode=markdown" -F "text=[$(git rev-parse --short HEAD)](https://github.com/HitaloSama/ErfanGSIs-Builder/commit/$(git rev-parse HEAD)) starting... E.T.A: 10-20 Minutes" -X POST https://api.telegram.org/bot$bot_token/sendMessage\?chat_id\=$chat_id1
 
        - name: Clone ErfanGSI Source Code
          run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs -b master
@@ -55,4 +51,5 @@ jobs:
               chat_id: ${{ secrets.CHAT_ID }}
               bot_token: ${{ secrets.BOT_TOKEN }}
          run: |
-              curl -F "parse_mode=HTML" -F "text=<code>`cat ErfanGSIs/output/*-Aonly-*.txt`</code>" -X POST https://api.telegram.org/bot$bot_token/sendMessage\?chat_id\=$chat_id
+              echo "::set-env name=CAT::$(cat ErfanGSIs/output/*-Aonly-*.txt)"
+              curl -F "parse_mode=markdown" -F "text=`$CAT`" -X POST https://api.telegram.org/bot$bot_token/sendMessage\?chat_id\=$chat_id

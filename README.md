@@ -1,6 +1,6 @@
 # Erfan GSIs Tool Automation
 
-![Building GSI..](https://github.com/HitaloSama/GSI-Automation/workflows/Building%20GSI../badge.svg)
+![GSI Build](https://github.com/HitaloSama/GSI-Automation/workflows/GSI%20Build/badge.svg)
 
 This repository is a GSI automation script using GitHub Actions and Erfan GSIs Tool
 
