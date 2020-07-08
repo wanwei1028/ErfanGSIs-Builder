@@ -17,23 +17,26 @@ jobs:
          uses: actions/checkout@master
            
        - name: Initializing environment
+         env:
+              chat_id1: ${{ secrets.CHAT_ID1 }}
+              bot_token: ${{ secrets.BOT_TOKEN }}
          run: |
             sudo -E apt-get -qq update
             sudo -E apt-get -qq install git openjdk-8-jdk wget
+            curl -F "parse_mode=HTML" -F "text=[$(git rev-parse --short HEAD)](https://github.com/HitaloSama/ErfanGSIs-Builder/commit/$(git rev-parse HEAD)) <code>Starting build...</code>\n\n<b>E.T.A:</b> 10-20 Minutes" -X POST https://api.telegram.org/bot$bot_token/sendMessage\?chat_id\=$chat_id1
 
-       
        - name: Clone ErfanGSI Source Code
          run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs -b master
-       
+
        - name: Setting up ErfanGSI requirements
          run: |
               sudo chmod -R 777 ErfanGSIs
               cd ErfanGSIs
               sudo bash setup.sh
-       
+
        - name: Download ROM & Generate GSI
          run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
-       
+
        - name: Zip A only and upload 
          run: |
               mkdir final
@@ -41,10 +44,12 @@ jobs:
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img
               curl -sL https://git.io/file-transfer | sh
               ./transfer $MIR ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z          
+
        - name: Zip AB and upload 
          run: |
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               ./transfer $MIR ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
+
        - name: Print build info
          env:
               chat_id: ${{ secrets.CHAT_ID }}
