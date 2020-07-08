@@ -23,7 +23,7 @@ jobs:
 
        
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs -b curtana
+         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs -b master
        
        - name: Setting up ErfanGSI requirements
          run: |
@@ -31,7 +31,7 @@ jobs:
               cd ErfanGSIs
               sudo bash setup.sh
        
-       - name: Download Stock Rom & Generate GSI
+       - name: Download ROM & Generate GSI
          run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
        
        - name: Zip A only and upload 
