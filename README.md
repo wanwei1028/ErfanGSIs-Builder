@@ -1,5 +1,7 @@
 # GSI-Automation 
 
+![Building GSI..](https://github.com/HitaloSama/GSI-Automation/workflows/Building%20GSI../badge.svg)
+
 ## This is a script to build GSIs with Erfan's tool with Github Star. ##
 ## Instructions : ##
 ### Firstly, fork this repo. ###
