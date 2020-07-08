@@ -52,4 +52,4 @@ jobs:
               bot_token: ${{ secrets.BOT_TOKEN }}
          run: |
               echo "::set-env name=CAT::$(cat ErfanGSIs/output/*-Aonly-*.txt)"
-              curl -F "parse_mode=markdown" -F "text=`$CAT`" -X POST https://api.telegram.org/bot$bot_token/sendMessage\?chat_id\=$chat_id
+              curl -F "parse_mode=markdown" -F "text=$CAT" -X POST https://api.telegram.org/bot$bot_token/sendMessage\?chat_id\=$chat_id
