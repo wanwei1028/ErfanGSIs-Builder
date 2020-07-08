@@ -46,7 +46,10 @@ jobs:
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               ./transfer $MIR ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
        - name: Print build info
+         env:
+              chat_id: ${{ secrets.CHAT_ID }}
+              bot_token: ${{ secrets.BOT_TOKEN }}
          run: |
-              cat ErfanGSIs/output/*-Aonly-*.txt
+              curl -F "text=`cat ErfanGSIs/output/*-Aonly-*.txt` -X POST https://api.telegram.org/bot$bot_token/sendMessage\?chat_id\=$chat_id
          
             
