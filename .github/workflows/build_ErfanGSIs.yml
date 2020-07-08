@@ -3,9 +3,9 @@ name: Building GSI..
 on: [push]
     
 env:
-  ROM_URL: https://hugeota.d.miui.com/20.6.28/miui_UMI_20.6.28_a5e0d69c19_11.0.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: miui_UMI_20.6.28_a5e0d69c19_11.0
+  ROM_URL: https://dl.google.com/developers/android/rvc/images/gsi/gsi_gms_arm64-exp-RPB1.200504.020-6557529.zip
+  ROM_NAME: Generic
+  ZIP_NAME: gsi_gms_arm64-exp-RPB1.200504.020-6557529
   TZ: America/Sao_Paulo
   MIR: bit
 jobs:
