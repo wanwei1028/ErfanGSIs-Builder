@@ -14,11 +14,11 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/MandFX_LEGION_Edition_whyred_20.7.4_10_Final.zip
+  ROM_URL: https://hugeota.d.miui.com/20.6.28/miui_UMI_20.6.28_a5e0d69c19_11.0.zip
   ROM_NAME: MIUI
-  ZIP_NAME: Mandfx
-  TZ: Asia/Kolkata
-  MIR: wet
+  ZIP_NAME: miui_UMI_20.6.28_a5e0d69c19_11.0
+  TZ: America/Sao_Paulo
+  MIR: bit
 jobs:
   build:
     runs-on: ubuntu-latest
