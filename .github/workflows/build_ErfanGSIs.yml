@@ -1,11 +1,11 @@
-name: Building GSI..
+name: GSI Build
 
 on: [push]
     
 env:
-  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus8ProOxygen/OnePlus8ProOxygen_15.O.20_GLO_020_2007021952/OnePlus8ProOxygen_15.O.20_OTA_020_all_2007021952_eccf3c03d8.zip
-  ROM_NAME: OxygenOS
-  ZIP_NAME: OxygenOS_OP8P
+  ROM_URL: https://dl.google.com/developers/android/rvc/images/factory/walleye-rpb2.200611.009-factory-97f69fa0.zip
+  ROM_NAME: Pixel
+  ZIP_NAME: Android11_B2
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
@@ -50,6 +50,4 @@ jobs:
               chat_id: ${{ secrets.CHAT_ID }}
               bot_token: ${{ secrets.BOT_TOKEN }}
          run: |
-              curl -F "text=`cat ErfanGSIs/output/*-Aonly-*.txt` -X POST https://api.telegram.org/bot$bot_token/sendMessage\?chat_id\=$chat_id
-         
-            
+              curl -F "parse_mode=markdown" -F "text=`cat ErfanGSIs/output/*-Aonly-*.txt`" -X POST https://api.telegram.org/bot$bot_token/sendMessage\?chat_id\=$chat_id
