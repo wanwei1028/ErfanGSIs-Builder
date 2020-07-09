@@ -2,9 +2,11 @@
 
 ![GSI Build](https://github.com/HitaloSama/GSI-Automation/workflows/GSI%20Build/badge.svg)
 
-This repository is a GSI automation script using GitHub Actions and Erfan GSIs Tool
+This repository is a GSI automation script using GitHub Actions and ErfanGSIs Tool.
 
-This repository is a fork of [this](https://github.com/JamieHoSzeYui/GSI-Automation) repository
+All GSIs made through these repositories will be sent to the channel [@VegaGSIs](https://t.me/VegaGSIs) on Telegram!
+
+This repository is a fork of [this](https://github.com/JamieHoSzeYui/GSI-Automation) repository.
 
 ## Thanks to
 
