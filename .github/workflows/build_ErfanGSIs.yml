@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
     
 env:
-  ROM_URL: http://bigota.d.miui.com/20.7.8/miui_RAPHAEL_20.7.8_0c77dddef8_10.0.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: MIUI
+  ROM_URL: http://download.h2os.com/OnePlus7T%20Pro/OBT/OnePlus7TProHydrogen_13.X.06_OTA_006_all_2006111742_3b33ebc22d4446c6.zip
+  ROM_NAME: OxygenOS
+  ZIP_NAME: H2OS
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
@@ -20,6 +20,15 @@ jobs:
          run: |
             sudo -E apt-get -qq update
             sudo -E apt-get -qq install git openjdk-8-jdk wget
+
+       - name: Set up python
+         uses: actions/setup-python@v2
+         with:
+           python-version: '3.8.2'
+
+       - name: Install python requirements
+         run: |
+              pip install pyrogram tgcrypto
 
        - name: Clone ErfanGSI Source Code
          run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs -b master
@@ -46,9 +55,12 @@ jobs:
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               ./transfer $MIR ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
 
+       - name: Create env variable CAT_FILE
+         run: echo "::set-env name=CAT_FILE::$(cat ErfanGSIs/output/*-Aonly-*.txt)"
+
        - name: Print build info
          env:
               chat_id: ${{ secrets.CHAT_ID }}
               bot_token: ${{ secrets.BOT_TOKEN }}
          run: |
-              curl -F "parse_mode=markdown" -F "text=`cat ErfanGSIs/output/*-Aonly-*.txt`" -X POST https://api.telegram.org/bot$bot_token/sendMessage\?chat_id\=$chat_id
+              python .github/workflows/bot.py
