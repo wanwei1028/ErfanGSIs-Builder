@@ -32,8 +32,8 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
     SYNC_START=$(date +"%s")
     telegram -M "`printenv ROM_NAME`: Upload started"
 
-    ./transfer $MIR $ROM-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.7z
-    ./transfer $MIR $ROM-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.7z
+    ./transfer $MIR $ROM-Aonly-$sourcever2-$date2-ErfanGSI.7z
+    ./transfer $MIR $ROM-AB-$sourcever2-$date2-ErfanGSI.7z
 
     SYNC_END=$(date +"%s")
     SYNC_DIFF=$((SYNC_END - SYNC_START))
