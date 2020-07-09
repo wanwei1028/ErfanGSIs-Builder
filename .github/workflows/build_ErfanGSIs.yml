@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
     
 env:
-  ROM_URL: https://oxygenos.oneplus.net/OnePlus5TOxygen_43_OTA_054_all_1906241434_770a37baadd84d4b.zip
-  ROM_NAME: OxygenOS
-  ZIP_NAME: OxygenOS_OP5T
+  ROM_URL: https://cfhcable.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms//xiaomi.eu/MIUI-WEEKLY-RELEASES/20.7.2/xiaomi.eu_multi_MI9SE_20.7.2_v12-10.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: miui-eu
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
@@ -58,7 +58,15 @@ jobs:
        - name: Create env variable CAT_FILE
          run: echo "::set-env name=CAT_FILE::$(cat ErfanGSIs/output/*-Aonly-*.txt)"
 
-       - name: Print build info
+       - name: Print A-Only build info
+         run: |
+              cat ErfanGSIs/output/*Aonly*.txt
+
+       - name: Print AB build info
+         run: |
+              cat ErfanGSIs/output/*-AB-*.txt
+
+       - name: Send build info to Telegram
          env:
               chat_id: ${{ secrets.CHAT_ID }}
               bot_token: ${{ secrets.BOT_TOKEN }}
