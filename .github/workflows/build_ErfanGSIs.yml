@@ -39,7 +39,7 @@ jobs:
               TOKEN: ${{ secrets.BOT_TOKEN }}
               
          run: |
-               chmod +x $ROM/build.sh
+               chmod +x build/build.sh
                . build/build.sh
 
        - name: Print A-Only build info
