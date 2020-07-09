@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
     
 env:
-  ROM_URL: http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7TOxygen/OnePlus7TOxygen_13.Y.06_GLO_006_2007030044/OnePlus7TOxygen_13.Y.06_OTA_006_all_2007030044_75c8c.zip
+  ROM_URL: http://download.h2os.com/OnePlus5/MP/OnePlus5Hydrogen_23_OTA_062_all_2005291726_3ddd7be9d6c74df8.zip
   ROM_NAME: OxygenOS
-  ZIP_NAME: OxygenOS_OP7T
+  ZIP_NAME: H2OS_OP5
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
@@ -62,5 +62,7 @@ jobs:
          env:
               chat_id: ${{ secrets.CHAT_ID }}
               bot_token: ${{ secrets.BOT_TOKEN }}
+              API_ID: ${{ secrets.API_ID }}
+              API_HASH: ${{ secrets.API_HASH }}
          run: |
               python .github/workflows/bot.py
