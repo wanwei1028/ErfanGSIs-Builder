@@ -33,9 +33,6 @@ jobs:
               cd ErfanGSIs
               sudo bash setup.sh
 
-       - name: Create env variable CAT_FILE
-         run: echo "::set-env name=CAT_FILE::$(cat ErfanGSIs/output/*-Aonly-*.txt)"
-
        - name: Execute Shell Script
          env:
               TOKEN: ${{ secrets.BOT_TOKEN }}
