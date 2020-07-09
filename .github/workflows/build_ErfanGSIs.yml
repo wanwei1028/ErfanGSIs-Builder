@@ -17,6 +17,9 @@ jobs:
          uses: actions/checkout@master
 
        - name: Initializing telegram bot
+         env:
+              TOKEN: ${{ secrets.BOT_TOKEN }}
+
          run: |
               sudo install telegram /usr/bin
               chmod +x build/initial.sh
