@@ -15,20 +15,12 @@ jobs:
     steps:
        - name: Checkout
          uses: actions/checkout@master
-           
-       - name: Initializing environment
-         run: |
-            sudo -E apt-get -qq update
-            sudo -E apt-get -qq install git openjdk-8-jdk wget
 
-       - name: Set up python
-         uses: actions/setup-python@v2
-         with:
-           python-version: '3.8.2'
-
-       - name: Install python requirements
+       - name: Initializing telegram bot
          run: |
-              pip install pyrogram tgcrypto
+              sudo install telegram /usr/bin
+              chmod +x build/initial.sh
+              . build/initial.sh
 
        - name: Clone ErfanGSI Source Code
          run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs -b master
@@ -39,24 +31,16 @@ jobs:
               cd ErfanGSIs
               sudo bash setup.sh
 
-       - name: Download ROM & Generate GSI
-         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
-
-       - name: Zip A only and upload 
-         run: |
-              mkdir final
-              sudo chmod -R 777 ErfanGSIs/output
-              zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img
-              curl -sL https://git.io/file-transfer | sh
-              ./transfer $MIR ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z          
-
-       - name: Zip AB and upload 
-         run: |
-              zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
-              ./transfer $MIR ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
-
        - name: Create env variable CAT_FILE
          run: echo "::set-env name=CAT_FILE::$(cat ErfanGSIs/output/*-Aonly-*.txt)"
+
+       - name: Execute Shell Script
+         env:
+              BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+              
+         run: |
+               chmod +x $ROM/build.sh
+               . build/build.sh
 
        - name: Print A-Only build info
          run: |
@@ -65,12 +49,3 @@ jobs:
        - name: Print AB build info
          run: |
               cat ErfanGSIs/output/*-AB-*.txt
-
-       - name: Send build info to Telegram
-         env:
-              CHAT_ID: ${{ secrets.CHAT_ID }}
-              BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-              API_ID: ${{ secrets.API_ID }}
-              API_HASH: ${{ secrets.API_HASH }}
-         run: |
-              python .github/workflows/bot.py

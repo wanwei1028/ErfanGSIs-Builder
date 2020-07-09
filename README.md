@@ -13,3 +13,4 @@ This repository is a fork of [this](https://github.com/JamieHoSzeYui/GSI-Automat
 * @Together08 for making the base script
 * @JamieHoSzeYui for translating repo and making it simple
 * @erfanoabdi for your GSIs Tool
+* @YuMi-Project for the build folder scripts
