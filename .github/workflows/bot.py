@@ -5,6 +5,6 @@ with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_toke
         client.send_message(
             text=os.getenv('CAT_FILE'),
             chat_id=os.getenv('CHAT_ID'),
-            parse_mode=markdown
+            parse_mode=markdown,
             disable_web_page_preview=true
         )
