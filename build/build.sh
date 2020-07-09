@@ -22,8 +22,8 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
                
     curl -sL https://git.io/file-transfer | sh
                
-    zip -r "$ROM"-AB-"$sourcever2"-"$date2"-ErfanGSI.7z *-AB-*.img
-    zip -r "$ROM"-Aonly-"$sourcever2"-"$date2"-ErfanGSI.7z *-Aonly-*.img
+    zip -r "$ROM_NAME"-AB-"$sourcever2"-"$date2"-ErfanGSI.7z *-AB-*.img
+    zip -r "$ROM_NAME"-Aonly-"$sourcever2"-"$date2"-ErfanGSI.7z *-Aonly-*.img
 
     SYNC_END=$(date +"%s")
     SYNC_DIFF=$((SYNC_END - SYNC_START))
@@ -32,8 +32,8 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
     SYNC_START=$(date +"%s")
     telegram -M "`printenv ROM_NAME`: Upload started"
 
-    ./transfer $MIR "$ROM-Aonly-$sourcever2-$date2-ErfanGSI.7z"
-    ./transfer $MIR "$ROM-AB-$sourcever2-$date2-ErfanGSI.7z"
+    ./transfer $MIR "$ROM_NAME-Aonly-$sourcever2-$date2-ErfanGSI.7z"
+    ./transfer $MIR "$ROM_NAME-AB-$sourcever2-$date2-ErfanGSI.7z"
 
     SYNC_END=$(date +"%s")
     SYNC_DIFF=$((SYNC_END - SYNC_START))
