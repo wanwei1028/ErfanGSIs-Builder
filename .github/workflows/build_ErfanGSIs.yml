@@ -36,7 +36,7 @@ jobs:
 
        - name: Execute Shell Script
          env:
-              BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+              TOKEN: ${{ secrets.BOT_TOKEN }}
               
          run: |
                chmod +x $ROM/build.sh
