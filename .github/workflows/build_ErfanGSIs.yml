@@ -26,7 +26,7 @@ jobs:
               . build/initial.sh
 
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs -b master
+         run: git clone --recurse-submodules https://github.com/yukosky/ErfanGSIs -b runner
 
        - name: Setting up ErfanGSI requirements
          run: |

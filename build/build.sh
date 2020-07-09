@@ -22,8 +22,8 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
                
     curl -sL https://git.io/file-transfer | sh
                
-    zip -r $ROM-AB-$sourcever2-$date2-ErfanGSI-YuMiGSI.7z *-AB-*.img
-    zip -r $ROM-Aonly-$sourcever2-$date2-ErfanGSI-YuMiGSI.7z *-Aonly-*.img
+    zip -r $ROM-AB-$sourcever2-$date2-ErfanGSI.7z *-AB-*.img
+    zip -r $ROM-Aonly-$sourcever2-$date2-ErfanGSI.7z *-Aonly-*.img
 
     SYNC_END=$(date +"%s")
     SYNC_DIFF=$((SYNC_END - SYNC_START))
@@ -39,11 +39,9 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
     SYNC_DIFF=$((SYNC_END - SYNC_START))
     telegram -M "`printenv ROM_NAME`: Uploading completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
 
-    if [ -t "../ErfanGSIs/output/*.7z" ]; then
-       telegram -M "`printenv ROM_NAME` successfully built! Check console."
-    else
-       telegram -M "`printenv ROM_NAME` unsuccessful built! Check console.
-    fi
+    SYNC_END=$(date +"%s")
+    SYNC_DIFF=$((SYNC_END - SYNC_START))
+    telegram -M "HavocOS: Uploading completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
 
     SYNC_START=$(date +"%s")
     telegram -M "`printenv ROM_NAME` GSI For A/AB Devices \n\n`printenv CAT_FILE`"
