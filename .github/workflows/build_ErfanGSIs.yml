@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
     
 env:
-  ROM_URL: https://svwh.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms//xiaomi.eu/MIUI-WEEKLY-RELEASES/20.7.9/xiaomi.eu_multi_MI9SE_20.7.9_v12-10.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: MIUI_EU
+  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7TProOxygen/OnePlus7TProOxygen_13.W.06_GLO_006_2007030104/OnePlus7TProOxygen_13.W.06_OTA_006_all_2007030104_44453c.zip
+  ROM_NAME: OxygenOS
+  ZIP_NAME: OxygenOS_OpBeta16
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
