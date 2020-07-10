@@ -3,8 +3,9 @@ name: GSI Build
 on: [push]
     
 env:
-  ROM_URL: https://pilotfiber.dl.sourceforge.net/project/evolution-x//raphael/EvolutionX_4.5_raphael-10.0-20200707-0844-OFFICIAL.zip
+  ROM_URL: https://master.dl.sourceforge.net/project/posp//beryllium/croquette/potato_beryllium-10-20200708-croquette.v3.2.1%2B17.Official.zip.md5sum
   ROM_NAME: Generic
+  ZIP_NAME: POSP
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
