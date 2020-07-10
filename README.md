@@ -4,9 +4,7 @@
 
 This repository is a GSI automation script using GitHub Actions and ErfanGSIs Tool.
 
-All GSIs made through these repositories will be sent to the channel [@VegaGSIs](https://t.me/VegaGSIs) on Telegram!
-
-This repository is a fork of [this](https://github.com/JamieHoSzeYui/GSI-Automation) repository.
+You can see the GSIs tool used by the repository [here](https://github.com/HitaloSama/ErfanGSIs)
 
 ## Thanks to
 
