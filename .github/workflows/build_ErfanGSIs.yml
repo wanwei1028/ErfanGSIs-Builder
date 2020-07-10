@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
     
 env:
-  ROM_URL: https://master.dl.sourceforge.net/project/posp//beryllium/croquette/potato_beryllium-10-20200708-croquette.v3.2.1%2B17.Official.zip.md5sum
+  ROM_URL: https://pilotfiber.dl.sourceforge.net/project/arrow-os//arrow-10.0/violet/Arrow-v10.0-violet-OFFICIAL-20200630-GAPPS.zip
   ROM_NAME: Generic
-  ZIP_NAME: POSP
+  ZIP_NAME: ArrowOS
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
