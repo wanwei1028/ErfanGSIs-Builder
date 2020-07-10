@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
     
 env:
-  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7TProOxygen/OnePlus7TProOxygen_13.W.06_GLO_006_2007030104/OnePlus7TProOxygen_13.W.06_OTA_006_all_2007030104_44453c.zip
+  ROM_URL: http://otafsc1.h2os.com/patch/CHN/OnePlus7ProHydrogen/OnePlus7ProHydrogen_13.X.39_039_2007030029/OnePlus7ProHydrogen_13.X.39_OTA_039_all_2007030029_f024.zip
   ROM_NAME: OxygenOS
-  ZIP_NAME: OxygenOS_OpBeta16
+  ZIP_NAME: HydrogenOS
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:

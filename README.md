@@ -1,4 +1,4 @@
-# Erfan GSIs Tool Automation
+# ErfanGSIs Tool Workflow
 
 ![GSI Build](https://github.com/HitaloSama/GSI-Automation/workflows/GSI%20Build/badge.svg)
 
