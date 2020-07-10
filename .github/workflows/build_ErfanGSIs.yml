@@ -24,6 +24,15 @@ jobs:
               chmod +x build/initial.sh
               . build/initial.sh
 
+       - name: Set up python
+         uses: actions/setup-python@v2
+         with:
+           python-version: '3.8.2'
+ 
+       - name: Install python requirements
+         run: |
+              pip install pyrogram tgcrypto
+
        - name: Clone ErfanGSI Source Code
          run: git clone --recurse-submodules https://github.com/yukosky/ErfanGSIs -b runner
 
@@ -48,3 +57,15 @@ jobs:
        - name: Print AB build info
          run: |
               cat ErfanGSIs/output/*-AB-*.txt
+
+       - name: Create env variable CAT_FILE
+         run: echo "::set-env name=CAT_FILE::$(cat ErfanGSIs/output/*-Aonly-*.txt)"
+
+       - name: Send build info to Telegram
+         env:
+              CHAT_ID: ${{ secrets.CHAT_ID }}
+              BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+              API_ID: ${{ secrets.API_ID }}
+              API_HASH: ${{ secrets.API_HASH }}
+         run: |
+              python .github/workflows/bot.py

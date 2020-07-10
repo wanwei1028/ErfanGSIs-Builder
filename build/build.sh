@@ -39,10 +39,10 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
     SYNC_DIFF=$((SYNC_END - SYNC_START))
     telegram -M "`printenv ROM_NAME`: Upload completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
 
-    export CAT_FILE=`cat ErfanGSIs/output/*-Aonly-*.txt`
+    # export CAT_FILE=`cat ErfanGSIs/output/*-Aonly-*.txt`
 
-    SYNC_START=$(date +"%s")
-    telegram -M "`printenv ROM_NAME` GSI For A/AB Devices\n\n `printenv CAT_FILE`"
+    # SYNC_START=$(date +"%s")
+    # telegram -M "`printenv ROM_NAME` GSI For A/AB Devices\n\n `printenv CAT_FILE`"
 
     SYNC_START=$(date +"%s")
     telegram -M "`printenv DOWNLOAD_A` // `printenv DOWNLOAD_AB`"
