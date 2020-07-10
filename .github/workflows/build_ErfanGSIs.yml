@@ -3,8 +3,8 @@ name: GSI Build
 on: [push]
     
 env:
-  ROM_URL: http://otafsc1.h2os.com/patch/CHN/OnePlus7THydrogen/OnePlus7THydrogen_13.X.07_007_2007030048/OnePlus7THydrogen_13.X.07_OTA_007_all_2007030048_96dc7.zip
-  ROM_NAME: OxygenOS
+  ROM_URL: https://ufpr.dl.sourceforge.net/project/ancientrom/mido/AncientOS-CIVILIZATION-v3.8-mido-PRIMEVAL-20200709-1544-GApps.zip
+  ROM_NAME: Generic
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
