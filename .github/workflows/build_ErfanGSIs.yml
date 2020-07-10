@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
     
 env:
-  ROM_URL: http://otafsc1.h2os.com/patch/CHN/OnePlus7ProHydrogen/OnePlus7ProHydrogen_13.X.39_039_2007030029/OnePlus7ProHydrogen_13.X.39_OTA_039_all_2007030029_f024.zip
-  ROM_NAME: OxygenOS
-  ZIP_NAME: HydrogenOS
+  ROM_URL: https://cfhcable.dl.sourceforge.net/project/evolution-x//raphael/EvolutionX_4.5_raphael-10.0-20200707-0844-OFFICIAL.zip
+  ROM_NAME: EvolutionX
+  ZIP_NAME: EvolutionX_v4.5
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
