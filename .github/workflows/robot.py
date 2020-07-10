@@ -1,3 +1,5 @@
+# Thanks to github.com/usernein
+
 import os
 import pyrogram
 
@@ -14,7 +16,7 @@ with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_toke
         text=f"""*{rom} GSI For A/AB Devices*
 
         {cat}
-            
+
         {da} // {dab}""",
         chat_id=os.getenv('CHAT_ID'),
         parse_mode="markdown",
