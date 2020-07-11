@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://firmware.meizu.com/Firmware/Flyme/16xs/8.20.6.30/cn_beta/20200629214232/9e9e118e/update.zip
-  ROM_NAME: Flyme
-  ZIP_NAME: Flyme
+  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.J.68_GLO_068_2006012227/OnePlus5TOxygen_43_OTA_068_all_2006012227_81bc84.zip
+  ROM_NAME: OxygenOS
+  ZIP_NAME: OxygenOS
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
@@ -35,7 +35,7 @@ jobs:
               pip install pyrogram tgcrypto
 
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/HitaloSama/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/HitaloSama/ErfanGSIs-Hitsuki.git ErfanGSIs
 
        - name: Setting up ErfanGSI requirements
          run: |
