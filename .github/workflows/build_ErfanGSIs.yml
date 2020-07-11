@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://drive.google.com/u/0/uc?export=download&confirm=DUQ2&id=1yxkHDfX1cdsElTcARdqMEj5e3p6PzbRl
-  ROM_NAME: OneUI
-  ZIP_NAME: OneUI
+  ROM_URL: https://firmware.meizu.com/Firmware/Flyme/16xs/8.20.6.30/cn_beta/20200629214232/9e9e118e/update.zip
+  ROM_NAME: Flyme
+  ZIP_NAME: Flyme
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
