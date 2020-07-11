@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS600KL/UL-ASUS_Z01QD_1-CN-16.0410.1910.95-1.1.125-user.zip
-  ROM_NAME: RogUI
-  ZIP_NAME: RogUI
+  ROM_URL: https://firmware.meizu.com/Firmware/Flyme/meizu17/8.1.1.2/cn/20200704154512/62ec39e8/update.zip
+  ROM_NAME: Flyme
+  ZIP_NAME: Flyme
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
