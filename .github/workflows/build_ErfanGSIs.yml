@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://cfhcable.dl.sourceforge.net/project/evolution-x//raphael/EvolutionX_4.5_raphael-10.0-20200707-0844-OFFICIAL.zip
-  ROM_NAME: EvolutionX
-  ZIP_NAME: EvolutionX_v4.5_DEBLOAT
+  ROM_URL: https://phoenixnap.dl.sourceforge.net/project/posp/guacamoleb/croquette/potato_guacamoleb-10-20200709-croquette.v3.2.1%2B17.Official.zip
+  ROM_NAME: Generic
+  ZIP_NAME: POSP_v3.2.1+17
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
