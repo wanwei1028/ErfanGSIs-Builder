@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://pilotfiber.dl.sourceforge.net/project/blissroms//Q/raphael/Bliss-v12.9-raphael-OFFICIAL-20200710.zip
+  ROM_URL: https://downloads.akhilnarang.dev/LineageOS/raphael/lineage-17.1-20200710-UNOFFICIAL-raphael.zip
   ROM_NAME: Generic
-  ZIP_NAME: Bliss_v12.9
+  ZIP_NAME: LineageOS_17.1
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
