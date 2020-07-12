@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://s3.amazonaws.com/cheryl-factory-images/aura-p-release-3141-user-full.zip
-  ROM_NAME: RazerUI
-  ZIP_NAME: RazerUI
+  ROM_URL: https://drive.google.com/u/0/uc?export=download&confirm=N7IT&id=101wxl9pZSCl88NCMB0L2Ezfd-qOqhEov
+  ROM_NAME: OneUI
+  ZIP_NAME: OneUI_UNSTABLE
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
