@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://get.derpfest.org/beryllium-vanilla/builds/DerpFest-10-Official-beryllium-20200711-0121-VANILLA.zip
+  ROM_URL: https://pilotfiber.dl.sourceforge.net/project/bootleggersrom//builds/beryllium/BootleggersROM-Queue4beryllium.5.1-Stable-Shishufied-20200614-124642.zip
   ROM_NAME: Generic
-  ZIP_NAME: AOSiP_Derpfest
+  ZIP_NAME: Bootleggers_v5.1
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
