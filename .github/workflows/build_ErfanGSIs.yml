@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://svwh.dl.sourceforge.net/project/aosp-forking//beryllium/aosp-forking-10-20200429-2306-beryllium.zip
-  ROM_NAME: Generic
-  ZIP_NAME: AOSP_Forking
+  ROM_URL: https://ota-1256119282.file.myqcloud.com//SKW-A0/skywalker-ota-eng.buildfarm_2019-12-11_skywalker_mp_ota7_20190910.zip
+  ROM_NAME: JoyUI
+  ZIP_NAME: JoyUI
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
