@@ -40,4 +40,4 @@ sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
     telegram -M -C "`printenv ROM_NAME`: upload completed in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds."
 
     SYNC_START=$(date +"%s")
-    telegram -M -C "`printenv ROM_NAME`: job done, you can find the GSI on $CHAT_ID"
+    telegram -M -C "`printenv ROM_NAME`: job done, you can find the GSI on `printenv CHAT_ID`"

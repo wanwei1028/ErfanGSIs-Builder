@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://api.aospextended.com/download/beryllium/q/51ec33e251453d4b1ba96969b5ef7827a66a6a6ea5c41c342a6e29324480272364248bf34cd8ab7cb9f65071284f2138d7308b2be98d
-  ROM_NAME: Generic
-  ZIP_NAME: AEX_v7.3
+  ROM_URL: https://bigota.d.miui.com/V12.0.2.0.QFJINXM/davinciin_in_global_images_V12.0.2.0.QFJINXM_20200701.0000.00_10.0_in_1b69fcfc8f.tgz
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUI
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
