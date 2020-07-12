@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://mor1.androidfilehost.com/dl/SPoX-ShIp3we5PiaVMSrvg/1594630957/4349826312261798572/stockrom.net_XT2061-3_BURTON_RETCA_10_QPB30.188-26_subsidy-DEFAULT_regulatory-DEFAULT_CFC.xml.zip
-  ROM_NAME: Moto
-  ZIP_NAME: MotoExperience
+  ROM_URL: https://updates.aospa.co/dipper/pa-quartz-3-dipper-20200623.zip
+  ROM_NAME: Generic
+  ZIP_NAME: ParanoidAndroid_Quartz3
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
