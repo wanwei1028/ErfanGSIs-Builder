@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://cfhcable.dl.sourceforge.net/project/xtended//raphael/Xtended-XQ-v11-raphael-OFFICIAL-20200712.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: Xtended-XQ_v11
+  ROM_URL: https://svwh.dl.sourceforge.net/project/pixys-os//ten/beryllium/PixysOS-v3.1.1-beryllium-OFFICIAL-20200710-155036.zip
+  ROM_NAME: Generic
+  ZIP_NAME: PixysOS_v3.1.1
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
