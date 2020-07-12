@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://drive.google.com/u/0/uc?export=download&confirm=uP6b&id=16zE_VLm6g8q89p4-ngG1eig1dZvwIW9y
-  ROM_NAME: OneUI
-  ZIP_NAME: OneUI
+  ROM_URL: https://mor1.androidfilehost.com/dl/SPoX-ShIp3we5PiaVMSrvg/1594630957/4349826312261798572/stockrom.net_XT2061-3_BURTON_RETCA_10_QPB30.188-26_subsidy-DEFAULT_regulatory-DEFAULT_CFC.xml.zip
+  ROM_NAME: Moto
+  ZIP_NAME: MotoExperience
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
