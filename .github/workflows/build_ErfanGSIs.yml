@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://drive.google.com/u/0/uc?export=download&confirm=N7IT&id=101wxl9pZSCl88NCMB0L2Ezfd-qOqhEov
+  ROM_URL: https://drive.google.com/u/0/uc?export=download&confirm=uP6b&id=16zE_VLm6g8q89p4-ngG1eig1dZvwIW9y
   ROM_NAME: OneUI
-  ZIP_NAME: OneUI_UNSTABLE
+  ZIP_NAME: OneUI
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
