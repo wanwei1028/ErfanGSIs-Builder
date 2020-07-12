@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://downloads.akhilnarang.dev/LineageOS/raphael/lineage-17.1-20200710-UNOFFICIAL-raphael.zip
+  ROM_URL: https://versaweb.dl.sourceforge.net/project/crdroid//raphael/6.x/crDroidAndroid-10.0-20200708-raphael-v6.8.zip
   ROM_NAME: Generic
-  ZIP_NAME: LineageOS_17.1
+  ZIP_NAME: Crdroid
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
