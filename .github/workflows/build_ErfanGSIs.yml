@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: http://otafsc1.h2os.com/patch/CHN/OnePlus7Hydrogen/OnePlus7Hydrogen_13.X.39_039_2007030032/OnePlus7Hydrogen_13.X.39_OTA_039_all_2007030032_e39477.zip
-  ROM_NAME: OxygenOS
-  ZIP_NAME: HydrogenOS
+  ROM_URL: https://get.derpfest.org/beryllium-vanilla/builds/DerpFest-10-Official-beryllium-20200711-0121-VANILLA.zip
+  ROM_NAME: Generic
+  ZIP_NAME: AOSiP_Derpfest
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
