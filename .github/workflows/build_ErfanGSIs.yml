@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://osdn.net/frs/redir.php?f=%2Fstorage%2Fg%2Fr%2Fre%2Frevengeos%2Fginkgo%2FRevengeOS-3.2-Q-OFFICIAL-ginkgo-20200711-1021.zip
+  ROM_URL: https://pilotfiber.dl.sourceforge.net/project/blissroms//Q/raphael/Bliss-v12.9-raphael-OFFICIAL-20200710.zip
   ROM_NAME: Generic
-  ZIP_NAME: RevengeOS_v3.2
+  ZIP_NAME: Bliss_v12.9
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:

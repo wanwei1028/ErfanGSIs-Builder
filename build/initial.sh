@@ -1,5 +1,6 @@
 #!/bin/bash
 # Sync
+
 telegram -M -C "`printenv ROM_NAME`: updating tools..."
 SYNC_START=$(date +"%s")
 
