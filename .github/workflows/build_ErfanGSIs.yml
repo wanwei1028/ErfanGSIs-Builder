@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://bigota.d.miui.com/V12.0.2.0.QFJINXM/davinciin_in_global_images_V12.0.2.0.QFJINXM_20200701.0000.00_10.0_in_1b69fcfc8f.tgz
-  ROM_NAME: MIUI
-  ZIP_NAME: MIUI
+  ROM_URL: https://pilotfiber.dl.sourceforge.net/project/ralf979-rom//PixelExperience_Plus_raphael-10.0-20200712-0802-FAN_EDITION.zip
+  ROM_NAME: PixelExperience
+  ZIP_NAME: PixelExperience_FE
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
