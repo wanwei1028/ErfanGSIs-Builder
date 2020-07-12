@@ -25,9 +25,9 @@ with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_toke
 <b>Download A-Only:</b> <a href="{da}">HERE</a>
 <b>Download A/B:</b> <a href="{dab}">HERE</a>
 
-<b>Thanks to: <a href="https://github.com/HitaloSama/ErfanGSIs-Hitsuki/graphs/contributors">Contributors List</a>
+<b>Thanks to:</b> <a href="https://github.com/HitaloSama/ErfanGSIs-Hitsuki/graphs/contributors">Contributors List</a>
 
-<a href="https://github.com/HitaloSama/ErfanGSIs-Hitsuki">Ported using ErfanGSIs Tool</a>""",
+<a href="https://github.com/HitaloSama/ErfanGSIs-Hitsuki">Ported using ErfanGSIs Tool - Hitsuki's Edit</a>""",
         chat_id=os.getenv('CHAT_ID'),
         parse_mode="html",
         disable_web_page_preview=True
