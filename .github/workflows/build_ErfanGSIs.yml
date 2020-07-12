@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://dl.omnirom.org/raphael/omni-10-20200712-raphael-WEEKLY.zip
-  ROM_NAME: Generic
-  ZIP_NAME: OmniROM
+  ROM_URL: https://cfhcable.dl.sourceforge.net/project/xtended//raphael/Xtended-XQ-v11-raphael-OFFICIAL-20200712.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: Xtended-XQ_v11
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
