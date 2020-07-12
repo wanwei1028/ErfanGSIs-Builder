@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://pilotfiber.dl.sourceforge.net/project/extendedui//raphael/ExtendedUI_1.2.1_raphael-10.0-20200521-2342-OFFICIAL.zip
-  ROM_NAME: Generic
-  ZIP_NAME: ExtendedUI
+  ROM_URL: https://s3.amazonaws.com/cheryl-factory-images/aura-p-release-3141-user-full.zip
+  ROM_NAME: RazerUI
+  ZIP_NAME: RazerUI
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
