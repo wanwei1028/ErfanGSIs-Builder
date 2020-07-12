@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://pilotfiber.dl.sourceforge.net/project/ralf979-rom//PixelExperience_Plus_raphael-10.0-20200712-0802-FAN_EDITION.zip
-  ROM_NAME: PixelExperience
-  ZIP_NAME: PixelExperience_FE
+  ROM_URL: http://otafsc1.h2os.com/patch/CHN/OnePlus7Hydrogen/OnePlus7Hydrogen_13.X.39_039_2007030032/OnePlus7Hydrogen_13.X.39_OTA_039_all_2007030032_e39477.zip
+  ROM_NAME: OxygenOS
+  ZIP_NAME: OxygenOS_FE
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
