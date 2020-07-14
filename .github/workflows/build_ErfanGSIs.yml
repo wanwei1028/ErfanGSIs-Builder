@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://bigota.d.miui.com/V12.0.1.0.QJKEUXM/miui_LMIEEAGlobal_V12.0.1.0.QJKEUXM_b4672d12eb_10.0.zip
+  ROM_URL: https://cfhcable.dl.sourceforge.net/project/miroom//20.7.9/Mi9TPro-RedmiK20Pro_MIUI_20.7.9_MiRoom_10.0.zip
   ROM_NAME: MIUI
-  ZIP_NAME: MIUI
+  ZIP_NAME: MiRoom
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
