@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: http://bigota.d.miui.com/20.7.14/miui_DAVINCI_20.7.14_1cd19a1210_10.0.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: MIUI
+  ROM_URL: https://cfhcable.dl.sourceforge.net/project/evolution-x//raphael/EvolutionX_4.5_raphael-10.0-20200713-0926-OFFICIAL.zip
+  ROM_NAME: EvolutionX
+  ZIP_NAME: EvolutionX_v4.5
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
