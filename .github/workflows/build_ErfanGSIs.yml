@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://ota-1256119282.file.myqcloud.com//SKW-A0/skywalker-ota-eng.buildfarm_2019-12-11_skywalker_mp_ota7_20190910.zip
-  ROM_NAME: JoyUI
-  ZIP_NAME: JoyUI
+  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7Oxygen/OnePlus7Oxygen_13.W.39_GLO_039_2007030029/OnePlus7Oxygen_13.W.39_OTA_039_all_2007030029_87355de26.zip
+  ROM_NAME: OxygenOS
+  ZIP_NAME: OxygenOS
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:

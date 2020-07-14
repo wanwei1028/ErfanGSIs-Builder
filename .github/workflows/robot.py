@@ -23,11 +23,11 @@ with pyrogram.Client('bot', os.getenv('API_ID'), os.getenv('API_HASH'), bot_toke
 <code>{cat}</code>
 
 <b>Download A-Only:</b> <a href="{da}">HERE</a>
-<b>Download A/B:</b> <a href="{dab}">HERE</a>
+<b>Download AB:</b> <a href="{dab}">HERE</a>
 
-<b>Thanks to:</b> <a href="https://github.com/HitaloSama/ErfanGSIs-Hitsuki/graphs/contributors">Contributors List</a>
+<b>Follow:</b> @TrebleExperience
 
-<a href="https://github.com/HitaloSama/ErfanGSIs-Hitsuki">Ported using ErfanGSIs Tool - Hitsuki's Edit</a>""",
+<a href="https://github.com/HitaloSama/ErfanGSIs">Ported using ErfanGSIs Tool - Hitsuki's Edit</a>""",
         chat_id=os.getenv('CHAT_ID'),
         parse_mode="html",
         disable_web_page_preview=True
