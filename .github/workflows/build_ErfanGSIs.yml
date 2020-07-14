@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://pilotfiber.dl.sourceforge.net/project/projectsakura//beryllium/ProjectSakura-VANILLA-2.Q-20200714-1424-beryllium-OFFICIAL.zip
-  ROM_NAME: Generic
-  ZIP_NAME: ProjectSakura_Vanilla_2.Q
+  ROM_URL: https://pilotfiber.dl.sourceforge.net/project/arrow-os//arrow-10.0/cheeseburger/Arrow-v10.0-cheeseburger-OFFICIAL-20200714-GAPPS.zip
+  ROM_NAME: Generic:ArrowOS
+  ZIP_NAME: ArrowOS
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
