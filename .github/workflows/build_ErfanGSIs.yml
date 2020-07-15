@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://cfhcable.dl.sourceforge.net/project/aexx//pixen/oneplus6t/PiXeN-OS-10-fajita-20200707-0922-OFFICIAL.zip
-  ROM_NAME: Generic:PiXeN-OS
-  ZIP_NAME: PiXeN-OS
+  ROM_URL: http://asia-sysupwsdl.vivoglobal.com/upgrade/official/officialFiles/PD1730F_EX_A_6.10.2-update-full_1579330406.zip
+  ROM_NAME: Funtouch
+  ZIP_NAME: Funtouch
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
