@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: http://asia-sysupwsdl.vivoglobal.com/upgrade/official/officialFiles/PD1730F_EX_A_6.10.2-update-full_1579330406.zip
-  ROM_NAME: Funtouch
-  ZIP_NAME: Funtouch
+  ROM_URL: https://cfhcable.dl.sourceforge.net/project/nitrogen-project//PocoF1%28Beryllium%29/Nitrogen-OS-10-beryllium-20200715.zip
+  ROM_NAME: Generic:NitrogenOS
+  ZIP_NAME: NitrogenOS
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
