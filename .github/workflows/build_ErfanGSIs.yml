@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://pilotfiber.dl.sourceforge.net/project/arrow-os//arrow-10.0/cheeseburger/Arrow-v10.0-cheeseburger-OFFICIAL-20200714-GAPPS.zip
-  ROM_NAME: Generic:ArrowOS
-  ZIP_NAME: ArrowOS
+  ROM_URL: https://osdn.net/frs/redir.php?f=%2Fstorage%2Fg%2Fr%2Fre%2Frevengeos%2Fberyllium%2FRevengeOS-3.2-Q-OFFICIAL-beryllium-20200714-0504.zip
+  ROM_NAME: Generic:RevengeOS
+  ZIP_NAME: RevengeOS_v3.2
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
