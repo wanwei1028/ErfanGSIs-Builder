@@ -4,8 +4,8 @@ on: [push]
 
 env:
   ROM_URL: https://get.pixelexperience.org/VDFCeEphRGgzaGRLcDhQbytzalIzZjdCbHFYNUliTEdXVXRTQ1drZ3JhZEhXMnAvalRhT1A3elM1ZVY1QUExWVBMYUgvT0x6RGFuaUZldzM5eXIyMzRPQ3Bic3FIZGpuKzArditZdTlBeDA9/PixelExperience_raphael-10.0-20200710-0313-OFFICIAL.zip
-  ROM_NAME: Generic:PixelExperience
-  ZIP_NAME: PixelExperience
+  ROM_NAME: PixelExperience
+  ZIP_NAME: PixelExperience_DEBLOAT
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
