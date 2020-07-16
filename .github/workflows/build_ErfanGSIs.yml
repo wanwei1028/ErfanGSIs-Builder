@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: http://download.h2os.com/OnePlus7Pro/OBT/OnePlus7ProHydrogen_13.X.39_OTA_039_all_2007031234_2bc88d7c326644b5.zip
-  ROM_NAME: OxygenOS:HydrogenOS
-  ZIP_NAME: HydrogenOS
+  ROM_URL: https://svwh.dl.sourceforge.net/project/bootleggersrom//builds/enchilada/BootleggersROM-Queue4enchilada.5.1-Stable-Shishufied-20200715-080306.zip
+  ROM_NAME: Generic:Bootleggers_v5.1
+  ZIP_NAME: Bootleggers_v5.1
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
