@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://get.pixelexperience.org/VDFCeEphRGgzaGRLcDhQbytzalIzZjdCbHFYNUliTEdXVXRTQ1drZ3JhZEhXMnAvalRhT1A3elM1ZVY1QUExWVBMYUgvT0x6RGFuaUZldzM5eXIyMzRPQ3Bic3FIZGpuKzArditZdTlBeDA9/PixelExperience_raphael-10.0-20200710-0313-OFFICIAL.zip
-  ROM_NAME: PixelExperience
-  ZIP_NAME: PixelExperience_DEBLOAT
+  ROM_URL: http://download.h2os.com/OnePlus7Pro/OBT/OnePlus7ProHydrogen_13.X.39_OTA_039_all_2007031234_2bc88d7c326644b5.zip
+  ROM_NAME: OxygenOS:HydrogenOS
+  ZIP_NAME: HydrogenOS
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
