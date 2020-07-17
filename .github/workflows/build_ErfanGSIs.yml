@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://svwh.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms//xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv11/xiaomi.eu_multi_HMNote9ProEU_V11.0.4.0.QJZMIXM_v11-10-fastboot.zip
-  ROM_NAME: MIUI:MIUI-EU
-  ZIP_NAME: MIUI-EU
+  ROM_URL: https://versaweb.dl.sourceforge.net/project/cosmic-os//mido/Cosmic-OS_Corona_mido_9.0_20190511_4.0-OFFICIAL.zip
+  ROM_NAME: Generic:CosmicOS
+  ZIP_NAME: CosmicOS
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
