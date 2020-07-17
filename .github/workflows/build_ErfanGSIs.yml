@@ -3,9 +3,9 @@ name: GSI Build
 on: [push]
 
 env:
-  ROM_URL: https://versaweb.dl.sourceforge.net/project/cosmic-os//mido/Cosmic-OS_Corona_mido_9.0_20190511_4.0-OFFICIAL.zip
-  ROM_NAME: Generic:CosmicOS
-  ZIP_NAME: CosmicOS
+  ROM_URL: https://svwh.dl.sourceforge.net/project/illusionproject//beryllium/AOSiP-10-Official-beryllium-20200716.sha256
+  ROM_NAME: Generic:AOSiP
+  ZIP_NAME: AOSiP
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
