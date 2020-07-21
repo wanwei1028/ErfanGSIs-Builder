@@ -4,8 +4,8 @@ on: [push]
 
 env:
   ROM_URL: https://firmware.meizu.com/Firmware/Flyme/meizu17_Pro/8.1.2.2/cn/20200704153422/5fc9f15d/update.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: MIUI
+  ROM_NAME: Flyme
+  ZIP_NAME: Flyme
   TZ: America/Sao_Paulo
   MIR: gof
 jobs:
